@@ -1,0 +1,9 @@
+# 全局配置参数
+hardware:
+  serial_port: "COM3"
+  baudrate: 9600
+  mock_mode: true
+
+mlops:
+  experiment_name: "robot-head-expression"
+  tracking_uri: "http://localhost:5000"

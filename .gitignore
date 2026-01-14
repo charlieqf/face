@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# ZenML
+.zen/
+
+# DVC
+.dvc/
+! .dvc/config
+! .dvc/hooks
+! .dvc/.gitignore
+! .dvc/plots
+
+# MLflow
+mlruns/
+mlruns.db
+
+# Data (Managed by DVC)
+data/raw/*
+! data/raw/PLACEHOLDER.md
+data/processed/*
+data/external/*
+
+# Models
+models/registry/*
+! models/registry/PLACEHOLDER.md
+models/scalers/*
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,14 @@
+# DVC Pipeline 定义
+stages:
+  preprocess:
+    cmd: python src/sensors/audio_processor.py
+    deps:
+      - data/raw
+    outs:
+      - data/processed
+  train:
+    cmd: python pipelines/demo_mlops.py
+    deps:
+      - data/processed
+    outs:
+      - models/registry
