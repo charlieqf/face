@@ -1,0 +1,17 @@
+# Core MLOps Tools
+zenml
+mlflow
+dvc
+
+# Machine Learning & Data Science
+scikit-learn
+pandas
+numpy
+
+# Hardware Communication
+pyserial
+
+# Model Export & Inference
+torch
+onnx
+onnxruntime
