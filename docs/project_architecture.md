@@ -51,7 +51,7 @@ robo-head-expression/
 - 这样员工即使没有硬件，只需在 `serial_port.py` 里开启 `MOCK_MODE`，整个 Brain 层的逻辑依然可以完整运行。
 
 ### 2. MLOps 深度集成
-- **数据与逻辑分离**：`data/` 下的大文件永不进入 Git，通过 `dvc.yaml` 确保数据预处理过程是可追溯、可复现的。
+- **数据与逻辑分离**：`data/` 下的大文件永不进入 Git，通过 `dvc.yaml` 确保数据预处理过程是可追溯、可复现的。详见 [DVC 使用指引](file:///c:/work/code/face/docs/guides/dvc_guide.md)。
 - **Pipeline 化**：所有的训练不再是散落的脚本，而是统一放在 `pipelines/` 下，通过 ZenML 进行编排，确保每个模型都有“出生证明”。
 
 ### 3. 可扩展性

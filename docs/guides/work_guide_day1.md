@@ -95,4 +95,5 @@ print(f"[SERIAL MOCK] 硬件执行指令中: #DGM:{val}!")
 ## 参考文档
 - [调研报告 (research.md)](file:///c:/work/code/face/docs/research/research.md)
 - [MLOps 方案 (mlops.md)](file:///c:/work/code/face/docs/mlops.md)
+- [DVC 与 dvc.yaml 指引 (dvc_guide.md)](file:///c:/work/code/face/docs/guides/dvc_guide.md)
 - [项目架构指引 (project_architecture.md)](file:///c:/work/code/face/docs/project_architecture.md)
