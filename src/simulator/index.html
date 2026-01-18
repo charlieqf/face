@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>机器人表情模拟器 - 直播专用版</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>机器人表情模拟器 <span class="badge">SIMULATOR</span></h1>
+            <p class="subtitle">场景：LLM 驱动的机器人直播同步演播室</p>
+        </header>
+
+        <main>
+            <div class="robot-face-box">
+                <div class="face">
+                    <div class="eye-container">
+                        <div class="eye eye-left">
+                            <div class="eyelid" id="lid-left"></div>
+                            <div class="pupil" id="pupil-left"></div>
+                        </div>
+                        <div class="eye eye-right">
+                            <div class="eyelid" id="lid-right"></div>
+                            <div class="pupil" id="pupil-right"></div>
+                        </div>
+                    </div>
+                    <div class="mouth-box">
+                        <div class="mouth" id="mouth"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="control-panel">
+                <div class="status-monitor">
+                    <h3>实时状态反馈</h3>
+                    <div class="status-grid">
+                        <div class="status-item">
+                            <span class="label">嘴巴 (Mouth)</span>
+                            <span class="value" id="val-mouth">1</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="label">眼球 (Eye Pos)</span>
+                            <span class="value" id="val-eye">11</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="label">眼皮 (Eyelid)</span>
+                            <span class="value" id="val-lid">1</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="actions">
+                    <button id="btn-load" class="primary">加载最新预测序列 (JSON)</button>
+                    <button id="btn-demo" class="secondary">播放演示序列</button>
+                    <div id="playback-status" class="playback-info">等待指令...</div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="log-panel" id="log">
+                [SYSTEM] 模拟器已就绪。
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

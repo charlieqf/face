@@ -1,0 +1,55 @@
+[
+    {
+        "mouth": 1,
+        "eye": 11,
+        "lid": 1,
+        "duration": 500,
+        "note": "静止状态"
+    },
+    {
+        "mouth": 3,
+        "eye": 11,
+        "lid": 1,
+        "duration": 300,
+        "note": "开始发音"
+    },
+    {
+        "mouth": 4,
+        "eye": 11,
+        "lid": 1,
+        "duration": 300
+    },
+    {
+        "mouth": 5,
+        "eye": 11,
+        "lid": 1,
+        "duration": 300,
+        "note": "张口最大"
+    },
+    {
+        "mouth": 3,
+        "eye": 11,
+        "lid": 1,
+        "duration": 300
+    },
+    {
+        "mouth": 1,
+        "eye": 11,
+        "lid": 1,
+        "duration": 400,
+        "note": "闭嘴停顿"
+    },
+    {
+        "mouth": 1,
+        "eye": 11,
+        "lid": 3,
+        "duration": 200,
+        "note": "眨眼动作"
+    },
+    {
+        "mouth": 1,
+        "eye": 11,
+        "lid": 1,
+        "duration": 500
+    }
+]

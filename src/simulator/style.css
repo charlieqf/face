@@ -1,0 +1,181 @@
+:root {
+    --bg-color: #0d1117;
+    --card-bg: #161b22;
+    --accent: #58a6ff;
+    --text: #c9d1d9;
+    --robot-face: #21262d;
+    --eye-color: #00d4ff;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', -apple-system, system-ui, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 900px;
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    border: 1px solid #30363d;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 { margin: 0; font-size: 24px; color: #fff; }
+.badge { font-size: 12px; background: var(--accent); padding: 2px 6px; border-radius: 4px; vertical-align: middle; }
+.subtitle { color: #8b949e; font-size: 14px; margin-top: 5px; }
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 30px;
+}
+
+/* 机器人脸部视觉样式 */
+.robot-face-box {
+    background: #000;
+    border-radius: 15px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.face {
+    width: 400px;
+    height: 300px;
+    background: var(--robot-face);
+    border-radius: 80px;
+    position: relative;
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+    border: 2px solid #30363d;
+}
+
+.eye-container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 60px;
+}
+
+.eye {
+    width: 80px;
+    height: 80px;
+    background: #000;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #30363d;
+}
+
+.pupil {
+    width: 30px;
+    height: 30px;
+    background: var(--eye-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 15px var(--eye-color);
+    transition: all 0.15s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+.eyelid {
+    position: absolute;
+    top: -100%; /* 1=正常睁眼 */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--robot-face);
+    z-index: 10;
+    transition: all 0.2s ease;
+}
+
+.mouth-box {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 60px;
+    background: #000;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.mouth {
+    width: 100px;
+    height: 2px; /* 1=闭嘴 */
+    background: var(--accent);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--accent);
+    transition: all 0.1s ease;
+}
+
+/* 控制面板样式 */
+.control-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.status-monitor {
+    background: #0d1117;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #30363d;
+}
+
+.status-monitor h3 { margin-top: 0; font-size: 14px; color: #8b949e; }
+.status-grid { display: flex; flex-direction: column; gap: 10px; }
+.status-item { display: flex; justify-content: space-between; font-size: 13px; }
+.value { color: var(--accent); font-weight: bold; font-family: monospace; }
+
+.actions button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: opacity 0.2s;
+}
+
+button.primary { background: var(--accent); color: #fff; }
+button.secondary { background: #21262d; color: var(--text); border: 1px solid #30363d; }
+button:hover { opacity: 0.8; }
+
+.playback-info { font-size: 12px; text-align: center; color: #8b949e; }
+
+footer {
+    margin-top: 30px;
+}
+
+.log-panel {
+    background: #000;
+    color: #39ff14;
+    padding: 10px;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    height: 60px;
+    overflow-y: auto;
+    border: 1px solid #1f2428;
+}

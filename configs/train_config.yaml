@@ -1,0 +1,33 @@
+# 训练配置文件 - 机器人表情映射项目
+
+model_settings:
+  # 模型选择: baseline (RandomForest) 或 advanced (LSTM)
+  type: "baseline"
+  random_state: 42
+  
+  # 如果是 baseline (RandomForest)
+  rf_params:
+    n_estimators: 100
+    max_depth: 10
+    
+  # 如果是 advanced (LSTM)
+  lstm_params:
+    hidden_dim: 64
+    num_layers: 2
+    dropout: 0.2
+
+training_hyperparams:
+  batch_size: 32
+  learning_rate: 0.001
+  epochs: 50
+  test_size: 0.2  # 20% 作为闭卷考试的测试集
+
+data_paths:
+  raw_data: "data/raw/training_data.csv"
+  output_dir: "data/output"
+  prediction_file: "data/output/prediction.json"
+
+smoothing:
+  apply_filter: true
+  cutoff_frequency: 3.0  # 低通滤波截止频率 (Hz)
+  sampling_rate: 30      # 采样率 (FPS)

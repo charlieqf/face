@@ -1,17 +1,15 @@
-# Core MLOps Tools (ZenML/MLflow require numpy<2.0)
-zenml>=0.54.0
-mlflow>=2.10.0
-dvc>=3.40.0
+#核心 MLOps 工具
+zenml
+mlflow
+dvc
 
-# Machine Learning & Data Science
-scikit-learn>=1.4.0
-pandas>=2.2.0
-numpy>=1.26.0,<2.0.0
+#数据处理与科学计算
+pandas
+numpy
+scikit-learn
 
-# Hardware Communication
-pyserial>=3.5
+#配置与序列化
+pyyaml
 
-# Model Export & Inference (Standardized for Torch/ONNX flow)
-torch>=2.2.0
-onnx>=1.15.0
-onnxruntime>=1.17.0
+#可选：如果需要快速启动 Web 模拟器的简易服务器
+flask
