@@ -1,55 +1,82 @@
 [
-    {
-        "mouth": 1,
-        "eye": 11,
-        "lid": 1,
-        "duration": 500,
-        "note": "静止状态"
-    },
-    {
-        "mouth": 3,
-        "eye": 11,
-        "lid": 1,
-        "duration": 300,
-        "note": "开始发音"
-    },
-    {
-        "mouth": 4,
-        "eye": 11,
-        "lid": 1,
-        "duration": 300
-    },
-    {
-        "mouth": 5,
-        "eye": 11,
-        "lid": 1,
-        "duration": 300,
-        "note": "张口最大"
-    },
-    {
-        "mouth": 3,
-        "eye": 11,
-        "lid": 1,
-        "duration": 300
-    },
-    {
-        "mouth": 1,
-        "eye": 11,
-        "lid": 1,
-        "duration": 400,
-        "note": "闭嘴停顿"
-    },
-    {
-        "mouth": 1,
-        "eye": 11,
-        "lid": 3,
-        "duration": 200,
-        "note": "眨眼动作"
-    },
-    {
-        "mouth": 1,
-        "eye": 11,
-        "lid": 1,
-        "duration": 500
-    }
+  {
+    "char": "了",
+    "mouth": 2,
+    "eye": 11,
+    "lid": 1,
+    "duration": 300,
+    "note": "Model Prediction (MSE Verified)"
+  },
+  {
+    "char": "吗",
+    "mouth": 2,
+    "eye": 11,
+    "lid": 1,
+    "duration": 300,
+    "note": "Model Prediction (MSE Verified)"
+  },
+  {
+    "char": " ",
+    "mouth": 1,
+    "eye": 11,
+    "lid": 1,
+    "duration": 300,
+    "note": "Model Prediction (MSE Verified)"
+  },
+  {
+    "char": "天",
+    "mouth": 5,
+    "eye": 3,
+    "lid": 4,
+    "duration": 300,
+    "note": "Model Prediction (MSE Verified)"
+  },
+  {
+    "char": "哪",
+    "mouth": 4,
+    "eye": 2,
+    "lid": 4,
+    "duration": 300,
+    "note": "Model Prediction (MSE Verified)"
+  },
+  {
+    "char": " ",
+    "mouth": 1,
+    "eye": 11,
+    "lid": 1,
+    "duration": 300,
+    "note": "Model Prediction (MSE Verified)"
+  },
+  {
+    "char": "对",
+    "mouth": 2,
+    "eye": 18,
+    "lid": 2,
+    "duration": 300,
+    "note": "Model Prediction (MSE Verified)"
+  },
+  {
+    "char": "不",
+    "mouth": 2,
+    "eye": 18,
+    "lid": 2,
+    "duration": 300,
+    "note": "Model Prediction (MSE Verified)"
+  },
+  {
+    "char": "起",
+    "mouth": 2,
+    "eye": 19,
+    "lid": 3,
+    "duration": 300,
+    "note": "Model Prediction (MSE Verified)"
+  },
+  {
+    "char": " ",
+    "mouth": 1,
+    "eye": 11,
+    "lid": 1,
+    "duration": 300,
+    "note": "Model Prediction (MSE Verified)"
+  }
 ]

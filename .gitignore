@@ -20,10 +20,10 @@ mlruns/
 mlruns.db
 
 # Data (Managed by DVC)
-data/raw/*
+# data/raw/*
 ! data/raw/PLACEHOLDER.md
-data/processed/*
-data/external/*
+# data/processed/*
+# data/external/*
 
 # Models
 models/registry/*
@@ -39,3 +39,5 @@ models/scalers/*
 # OS
 Thumbs.db
 Desktop.ini
+external_repos/
+venv_310/

@@ -1,0 +1,12 @@
+sequence_id,char,mouth_target,eye_target,lid_target,emotion,timestamp
+0,你,3,11,1,neutral,0.0
+0,好,4,11,1,neutral,0.3
+0,，,1,11,1,neutral,0.6
+0,我,3,10,1,neutral,0.9
+0,是,3,12,1,neutral,1.2
+0,机,3,11,1,neutral,1.5
+0,器,3,11,1,neutral,1.8
+0,人,4,11,1,neutral,2.1
+0,小,2,11,2,happy,2.4
+0,白,4,11,1,happy,2.7
+0,。,1,11,3,neutral,3.0
